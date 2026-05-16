@@ -1,0 +1,118 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "$HOME/.config/fastfetch/koleksi/duduk-tr.png",
+    "type": "auto",
+    "width": 30
+  },
+  "display": {
+    "separator": "  ", // Separator between keys and values
+    "color": {
+      "keys": "red", // Key color
+      "title": "red", // Title color
+      "separator": "light_blue",
+    },
+    "key": {
+      "width": 17, // Aligns keys to this width
+      "type": "string" // string, icon, both, or none
+    },
+    "bar": {
+      "width": 10, // Width of percentage bars
+      "char": {
+        "elapsed": "■", // Character for elapsed portion
+        "total": "-", // Character for total portion
+      },
+    },
+    "percent": {
+      "type": 9, // 1=number, 2=bar, 3=both, 9=colored number
+      "color": {
+        "green": "green",
+        "yellow": "light_yellow",
+        "red": "light_red"
+      }
+    }
+  },
+  "modules": [
+    //"title",
+    //{
+    //  "type": "separator",
+    //  "outputColor": "red"
+    //},
+    {
+      "type": "break",
+    },
+    {
+      "type": "custom",
+      "format": "{#light_red}┏━ MAIN INFO ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    },
+    {
+      "type": "os",
+      "key": "┃ OS        "
+    },
+    {
+      "type": "host",
+      "key": "┃ Host      "
+    },
+    {
+      "type": "kernel",
+      "key": "┃ Kernel    "
+    },
+    {
+      "type": "packages",
+      "key": "┃ Packages  "
+    },
+    {
+      "type": "shell",
+      "key": "┃ Shell     "
+    },
+    {
+      "type": "de",
+      "key": "┃ DE        "
+    },
+    {
+      "type": "wm",
+      "key": "┃ WM        "
+    },
+    {
+      "type": "terminal",
+      "key": "┃ Terminal  "
+    },
+    {
+      "type": "custom",
+      "format": "{#light_red}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    },
+    {
+      "type": "custom",
+      "format": "{#light_red}┏━ USAGE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    },
+    {
+      "type": "command",
+      "key": "┃ OS Age    ",
+      "text": "birth=$(stat -c %W /); current=$(date +%s); echo $(( (current - birth) / 86400 )) days"
+    },
+    {
+      "type": "uptime",
+      "key": "┃ Uptime    "
+    },
+    {
+      "type": "cpuusage",
+      "key": "┃ CPU       "
+    },
+    {
+      "type": "memory",
+      "key": "┃ Memory    "
+    },
+    {
+      "type": "swap",
+      "key": "┃ Swap      "
+    },
+    {
+      "type": "localip",
+      "key": "┃ IP        "
+    },
+    {
+      "type": "custom",
+      "format": "{#light_red}┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    }
+  ]
+}

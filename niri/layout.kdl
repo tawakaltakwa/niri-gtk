@@ -1,0 +1,35 @@
+// ────────────── Layout Settings ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
+
+layout {
+    gaps 0 // Gap between windows
+    center-focused-column "never" // Don’t auto-center focused column
+    always-center-single-column
+    background-color "transparent"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    focus-ring {
+        off
+    }
+    
+    border {
+        on
+        width 2
+    }
+
+    shadow {
+    	off
+    }
+
+    struts {}
+}
+
+overview {
+    backdrop-color "red"
+}
+

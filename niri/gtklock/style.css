@@ -1,0 +1,40 @@
+@import url("../warnaumum.css");
+
+window {
+    background-image: url("/home/kal/.config/niri/wallpaper/sisi-jalan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#window-box {
+    padding: 20px;
+    border: 3px solid @warna1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+    background-color: @background;
+    color: @foreground;
+}
+
+button {
+    background-image: none;
+    /* Penting untuk menimpa tema default */
+    background-color: @warna1;
+    /* Warna latar belakang tombol (contoh: merah) */
+    color: @foreground;
+    /* Warna teks tombol (contoh: putih) */
+    border: 1px solid @warna1;
+    /* Warna border tombol */
+    border-radius: 10px;
+    /* Sudut membulat */
+    padding-left: 12px;
+    /* Padding di dalam tombol */
+    padding-right: 12px;
+}
+
+entry {
+    border: 2px solid @warna1;
+    /* Warna border kotak teks */
+    border-radius: 10px;
+    /* Sudut membulat */
+}

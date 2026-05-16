@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <object class="GtkMenu" id="menu">
+		<child>
+			<object class="GtkMenuItem" id="ckey">
+				<property name="name">ItemPower</property>
+				<property name="label"> Keyboard Shortcut</property>
+			</object>
+		</child>
+        <child>
+			<object class="GtkMenuItem" id="cterm">
+				<property name="name">ItemPower</property>
+				<property name="label"> Terminal</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="crun">
+				<property name="name">ItemPower</property>
+				<property name="label"> Run Command</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="cbrowser">
+				<property name="name">ItemPower</property>
+				<property name="label"> Firefox</property>
+			</object>
+		</child>
+		<child>
+			<object class="GtkMenuItem" id="crwaybar">
+				<property name="name">ItemPower</property>
+				<property name="label"> Restart Waybar</property>
+			</object>
+		</child>
+	</object>
+</interface>

@@ -1,0 +1,42 @@
+@import url("/home/kal/.config/niri/warnaumum.css");
+
+* {
+	background-image: none;
+	border: none;
+	border-radius: 13px;
+}
+
+#outer-box {
+	position: relative;
+	border: 3px solid @warna1;
+	padding: 6px;
+	background-color: @background;
+}
+
+#window {
+	font-size: 24px;
+	background-color: transparent;
+	color: @foreground;
+}
+
+#entry:selected {
+	background-color: @warna1;
+	color: @foreground;
+}
+
+#text:selected {
+	color: @background;
+}
+
+#input {
+	background-color: @background;
+	border-bottom: 3px solid transparent;
+	color: @foreground;
+	border: 3px solid @warna1;
+	margin-bottom: 6px;
+}
+
+image {
+	margin-left: .25em;
+	margin-right: .25em;
+}
