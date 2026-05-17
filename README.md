@@ -1,4 +1,4 @@
-# Niri Tifa
+# Niri GTK
 
 Dotfiles/Backup konfigurasi niri (beserta aplikasi pendukungnya: kebanyakan dari aplikasi GTK/Gnome/XFCE) bertema warna dan wallpaper Tifa. Fokus ke warna merah putih hitam sesuai tema pakaian Tifa. Semua konfigurasi berdasarkan kebutuhan dan kebiasaan personal, kalau ada yang nyasar ke sini dan mau pake juga silahkan, edit saja sendiri bagian yang kurang sesuai dengan kebutuhan kalian.
 
@@ -8,16 +8,6 @@ Dotfiles/Backup konfigurasi niri (beserta aplikasi pendukungnya: kebanyakan dari
 Dengan wallpaper 1
 <br>
 ![Screenshot](screenshot/Screenshot1.png)
-<br>
-<br>
-Dengan wallpaper 2
-<br>
-![Screenshot](screenshot/Screenshot2.png)
-<br>
-<br>
-Dengan wallpaper 3
-<br>
-![Screenshot](screenshot/Screenshot3.png)
 <br>
 
 ### Menu 1 - Aplikasi Launcher
@@ -53,6 +43,7 @@ Session menu.
 |---|---|
 ||Logout|
 ||Lock Screen|
+|⏼|Hibernate|
 ||Restart|
 ||Shutdown|
 
@@ -75,7 +66,7 @@ Kebanyakan control umum masih default niri.
 | MOD+L | Lock screen: gtklock |
 | MOD+E | File manager: nautilus |
 | MOD+A | Antigravity |
-| MOD+W | Ganti Wallpaper |
+| MOD+W | Ganti Wallpaper Random |
 | MOD+R | Command Runner: wmenu |
 | MOD+Period (.) | Emoji Picker: gnome-characters |
 | MOD+X | Clipboard: cliphist |
@@ -138,3 +129,4 @@ Kemudian install aplikasi di bawah.
 - Jika mau nambah atau ganti wallpaper, lokasi wallpaper di `niri/wallpaper/`.
 - saya pake ini di pc, jadi bagian style waybar tentang batery sama sekali gak diatur, kalau mau diatur ya edit sendiri aja.
 - saya gak pake bluetooth, jadi yang berkaitan dengan bluetooth ju gak diatur
+- di settingan ini menu suspend gak kelihatan, karena error di arch linux saya gagal fix, belum nemu cara fix yang berhasil, masalahnya tidur gak bisa bangun lagi.
