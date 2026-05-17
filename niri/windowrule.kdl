@@ -25,10 +25,6 @@ window-rule {
     match app-id="org.kde.plasma-systemmonitor"
     match app-id="mpv"
     open-maximized true
-    background-effect {
-        xray true
-        blur true
-    }
 }
 
 window-rule {
