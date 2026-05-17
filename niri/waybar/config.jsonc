@@ -333,7 +333,7 @@
     "custom/sc_terminal": {
         "format": "",
         "on-click": "bash ~/.config/fastfetch/slowfetch.sh",
-        "tooltip-format": "Terminal: konsole"
+        "tooltip-format": "Terminal: kitty"
     },
     "custom/sc_run": {
         "format": "",
@@ -342,8 +342,8 @@
     },
     "custom/sc_filemanager": {
         "format": "",
-        "on-click": "pcmanfm-qt",
-        "tooltip-format": "File Manager: pcmanfm-qt"
+        "on-click": "nautilus",
+        "tooltip-format": "File Manager: nautilus"
     },
     "custom/sc_browser": {
         "format": "",
