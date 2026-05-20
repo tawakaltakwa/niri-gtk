@@ -39,3 +39,10 @@ window-rule {
     open-floating true
     open-focused true
 }
+
+window-rule {
+    match app-id="popup-konfirmasi-reboot.py"
+    match app-id="popup-konfirmasi-shutdown.py"
+    open-floating true
+    default-floating-position x=0 y=0 relative-to="top-right"
+}

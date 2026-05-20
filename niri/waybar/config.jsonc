@@ -268,20 +268,12 @@
     "custom/spoweroff-dgnkonfirmasi": {
         "format": "⏻",
         "tooltip-format": "Power Off / Shutdown",
-        "menu": "on-click",
-        "menu-file": "$HOME/.config/niri/waybar/poweroff_konfirmasi.xml",
-        "menu-actions": {
-            "shutdown": "systemctl poweroff"
-        }
+        "on-click": "~/.config/niri/waybar/popup-konfirmasi-shutdown.py"
     },
     "custom/sreboot-dgnkonfirmasi": {
         "format": "",
         "tooltip-format": "Reboot",
-        "menu": "on-click",
-        "menu-file": "$HOME/.config/niri/waybar/reboot_konfirmasi.xml",
-        "menu-actions": {
-            "reboot": "systemctl reboot"
-        }
+        "on-click": "~/.config/niri/waybar/popup-konfirmasi-reboot.py"
     },
     "custom/sreboot": {
         "format": "",
@@ -341,7 +333,7 @@
         "tooltip-format": "Runner: wmenu"
     },
     "custom/sc_filemanager": {
-        "format": "",
+        "format": "",
         "on-click": "nautilus",
         "tooltip-format": "File Manager: nautilus"
     },
@@ -363,7 +355,6 @@
     "custom/launcher": {
         "format": "",
         "on-click": "wofi -s ~/.config/niri/wofi/styles.css --show drun -I -G -W 40% -l 1",
-        //"on-click": "fuzzel --config=/home/kal/.config/niri/fuzzel/fuzzel.ini -a top-left",
         "tooltip": false
     },
     "custom/browser": {
@@ -386,7 +377,6 @@
         "orientation": "horizontal",
         "modules": [
             "group/grwaktu",
-            //"group/grsuara",
             "pulseaudio",
             "group/grsession"
         ]
@@ -400,7 +390,6 @@
             "niri/workspaces",
             "custom/spasi",
             "wlr/taskbar"
-            //"wlr/taskbar"
         ]
     },
     "group/grtaskbar": {
