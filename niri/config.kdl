@@ -228,4 +228,4 @@ cursor {
 include "startup.kdl"
 include "windowrule.kdl"
 include "layout.kdl"
-include "preset-warna/merah.kdl"
+include "preset-warna/kuning.kdl"

@@ -1,6 +1,6 @@
 # See man 5 mako
 
-include=~/.config/niri/preset-warna/merah
+include=~/.config/niri/preset-warna/kuning
 
 max-visible=7
 sort=-time
