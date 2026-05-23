@@ -45,7 +45,7 @@ binds {
     MOD+R                               hotkey-overlay-title="Command Runner: wmenu" { spawn-sh "wmenu-run -N 000000 -n ffffff -S ff0000 -s 000000 -b"; }
     MOD+Escape                          hotkey-overlay-title="Task Manager: gnome-system-monitor" { spawn "gnome-system-monitor"; }
     MOD+E               	            hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
-    MOD+A                               hotkey-overlay-title="Antigravity" { spawn "antigravity"; }
+    MOD+A                               hotkey-overlay-title="Antigravity" { spawn "antigravity-ide"; }
     MOD+W                               hotkey-overlay-title="Change Wallpaper" { spawn-sh "bash ~/.config/niri/scripts/change-wallpaper.sh"; }
     MOD+period                          hotkey-overlay-title="Gnome Characters" { spawn "gnome-characters"; }
     //MOD+X                               hotkey-overlay-title="Clipboard History" { spawn-sh "cliphist list | wofi -S dmenu -s ~/.config/niri/wofi/styles.css -I -G -W 40% | cliphist decode | wl-copy"; }
@@ -228,4 +228,4 @@ cursor {
 include "startup.kdl"
 include "windowrule.kdl"
 include "layout.kdl"
-include "preset-warna/kuning.kdl"
+include "preset-warna/hijau.kdl"

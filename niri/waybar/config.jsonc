@@ -337,6 +337,11 @@
         "on-click": "nautilus",
         "tooltip-format": "File Manager: nautilus"
     },
+    "custom/sc_configdir": {
+        "format": "",
+        "on-click": "./.config/niri/waybar/popup-listconfig.py",
+        "tooltip-format": "List Config"
+    },
     "custom/sc_browser": {
         "format": "",
         "on-click": "firefox",
@@ -443,6 +448,7 @@
             "custom/sc_run",
             "custom/sc_browser",
             "custom/sc_filemanager",
+            "custom/sc_configdir",
             "custom/sc_randwallpaper",
             "custom/sc_rwaybar",
             "group/grgantiwarna"
