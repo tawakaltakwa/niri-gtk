@@ -342,6 +342,11 @@
         "on-click": "./.config/niri/waybar/popup-listconfig.py",
         "tooltip-format": "List Config"
     },
+    "custom/sc_fav": {
+        "format": "",
+        "on-click": "./.config/niri/waybar/popup-listconfig.py",
+        "tooltip-format": "Favorit"
+    },
     "custom/sc_browser": {
         "format": "",
         "on-click": "firefox",
@@ -444,11 +449,11 @@
         "modules": [
             "custom/sc_label",
             "custom/sc_keylist",
+            "custom/sc_fav",
             "custom/sc_terminal",
             "custom/sc_run",
             "custom/sc_browser",
             "custom/sc_filemanager",
-            "custom/sc_configdir",
             "custom/sc_randwallpaper",
             "custom/sc_rwaybar",
             "group/grgantiwarna"

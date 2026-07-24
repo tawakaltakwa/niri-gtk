@@ -7,28 +7,28 @@ import subprocess
 
 class ListConfig(Gtk.Window):
     def __init__(self):
-        super().__init__(title="Daftar Konfigurasi")
+        super().__init__(title="Aplikasi Favorit")
         
         # Pengaturan Window
-        self.set_border_width(20)
+        self.set_border_width(10)
         self.set_name("window-utama")
 
         # Main Layout (Vertical Box)
-        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=15)
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
         vbox.set_halign(Gtk.Align.FILL)
         vbox.set_valign(Gtk.Align.CENTER)
         self.add(vbox)
 
         # Judul Pop-up
-        title_label = Gtk.Label(label="DAFTAR KONFIGURASI")
+        title_label = Gtk.Label(label="DAFTAR APLIKASI/DIRKTORI YANG SERING DIBUKA")
         title_label.set_name("judul")
         title_label.set_halign(Gtk.Align.CENTER)
         vbox.pack_start(title_label, False, False, 0)
 
         # Grid untuk Tabel
         grid = Gtk.Grid()
-        grid.set_column_spacing(25)
-        grid.set_row_spacing(12)
+        grid.set_column_spacing(5)
+        grid.set_row_spacing(5)
         grid.set_halign(Gtk.Align.CENTER)
         vbox.pack_start(grid, True, True, 0)
 
@@ -45,13 +45,14 @@ class ListConfig(Gtk.Window):
 
         # Data Baris: (Nama, Path/Deskripsi, Action Type, Action Target, Label Tombol)
         rows_data = [
-            ("wofi", "runner", "cmd", "wofi -s ~/.config/niri/wofi/styles.css --show drun -I -G -W 40%", "Run"),
-            ("kitty", "terminal dengan awalan fastfetch dengan random gambar", "cmd", "bash ~/.config/fastfetch/slowfetch.sh", "Run"),
-            ("niri", "~/.config/niri", "path", "~/.config/niri", "Buka Direktori"),
-            ("mako", "~/.config/niri/mako", "path", "~/.config/niri/mako", "Buka Direktori"),
-            ("wallpaper", "~/.config/niri/wallpaper", "path", "~/.config/niri/wallpaper", "Buka Direktori"),
-            ("fastfetch gambar", "~/.config/fastfetch/koleksi", "path", "~/.config/fastfetch/koleksi", "Buka Direktori")
-            
+            ("Waydroid Start", "Waydroid Full UI", "cmd", "waydroid show-full-ui", "Run"),
+            ("Waydroid Stop", "Hentikan service waydroid - systemctl", "cmd", "systemctl stop waydroid-container.service", "Run"),
+            ("Apache start", "Mulai service apache - systemctl", "cmd", "systemctl start httpd", "Run"),
+            ("Apache stop", "Hentikan service apache - systemctl", "cmd", "systemctl stop httpd", "Run"),
+            ("MariaDB start", "Mulai service mariadb - systemctl", "cmd", "systemctl start mariadb", "Run"),
+            ("MariaDB stop", "Hentikan service mariadb - systemctl", "cmd", "systemctl stop mariadb", "Run"),
+            ("Warung", "~/SagalaAya/data/MEGA/Warung", "path", "~/SagalaAya/data/MEGA/Warung", "Buka Direktori"),
+            ("Aplikasi Portable", "Kumpulan Aplikasi Portable", "path", "~/SagalaAya/PortableApp", "Buka Direktori"),
         ]
 
         for row_idx, (name, display_val, action_type, action_target, btn_label) in enumerate(rows_data, start=1):
@@ -89,7 +90,7 @@ class ListConfig(Gtk.Window):
         # Mendapatkan path file CSS
         script_dir = os.path.dirname(os.path.abspath(__file__))
         local_css = os.path.join(script_dir, "popup-style.css")
-        home_css = os.path.expanduser("~/.config/niri/waybar/popup-style.css")
+        home_css = os.path.expanduser("~/.config/hypr/waybar/popup-style.css")
 
         css_file = local_css if os.path.exists(local_css) else home_css
         if os.path.exists(css_file):

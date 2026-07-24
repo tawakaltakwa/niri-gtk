@@ -7,7 +7,7 @@ spawn-sh-at-startup "waybar -c ~/.config/niri/waybar/config.jsonc -s ~/.config/n
 spawn-sh-at-startup "awww-daemon"
 spawn-sh-at-startup "bash ~/.config/niri/scripts/ganti-auto.sh"
 spawn-at-startup "nm-applet"
-spawn-at-startup "xwayland-satellite"
+// spawn-at-startup "xwayland-satellite"
 spawn-sh-at-startup "mako -c ~/.config/niri/mako/config"
 // spawn-sh-at-startup "wl-paste --watch cliphist store"
 // spawn-at-startup "nwg-look -a"
