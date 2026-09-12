@@ -395,6 +395,7 @@
         "orientation": "horizontal",
         "modules": [
             "custom/launcher",
+            "custom/sc_fav",
             "group/grshortcut",
             "tray",
             "niri/workspaces",
@@ -449,7 +450,6 @@
         "modules": [
             "custom/sc_label",
             "custom/sc_keylist",
-            "custom/sc_fav",
             "custom/sc_terminal",
             "custom/sc_run",
             "custom/sc_browser",

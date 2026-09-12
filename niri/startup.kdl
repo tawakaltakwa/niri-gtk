@@ -9,6 +9,8 @@ spawn-sh-at-startup "bash ~/.config/niri/scripts/ganti-auto.sh"
 spawn-at-startup "nm-applet"
 // spawn-at-startup "xwayland-satellite"
 spawn-sh-at-startup "mako -c ~/.config/niri/mako/config"
+spawn-sh-at-startup "swayidle -w timeout 1800 'gtklock -s ~/.config/niri/gtklock/style.css & systemctl hibernate'"
 // spawn-sh-at-startup "wl-paste --watch cliphist store"
 // spawn-at-startup "nwg-look -a"
 // spawn-at-startup "/usr/lib/xdg-desktop-portal-gtk"
+

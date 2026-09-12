@@ -24,6 +24,7 @@ window-rule {
     match app-id="org.kde.haruna"
     match app-id="org.kde.plasma-systemmonitor"
     match app-id="mpv"
+    match title="YGO Omega"
     open-maximized true
 }
 
